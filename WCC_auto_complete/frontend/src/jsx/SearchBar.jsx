@@ -37,7 +37,7 @@ class SearchBar extends Component {
     try {
       // Perform the request to get the search results
       const response = await axios.get(
-        `https://www.googleapis.com/customsearch/v1?key=AIzaSyDuykIw1_2Efmtq4bx6eCiqUuAKsgM6TP4&cx=571e7d78355bf4957&q=${searchValue}&searchType=image`
+        `https://www.googleapis.com/customsearch/v1?key=AIzaSyA0xOEWfiYNxh2Nswj17Lo5WyiL1aqlXl0&cx=a7aa893aa26544936&q=${searchValue}&searchType=image`
       );
       const searchResults = response.data.items.map((item) => {
         return {
